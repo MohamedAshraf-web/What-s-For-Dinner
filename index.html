@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's For Dinner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo"><i class="fa-solid fa-utensils"></i></span>
+      <div>
+        <h1>What's For Dinner</h1>
+        <p>Your daily meal inspiration</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#" title="Saved Recipes"><i class="fa-solid fa-bookmark"></i></a>
+      <a href="#" title="Recent"><i class="fa-solid fa-clock-rotate-left"></i></a>
+      <a href="#" title="Settings"><i class="fa-solid fa-gear"></i></a>
+      <img class="avatar" src="photo/530690204_24180804254934232_5777023261826925968_n.jpg" alt="Profile">
+    </nav>
+  </header>
+
+  <main class="recipe">
+    <div class="photo" id="photo">
+      <span class="rating" id="rating"></span>
+     
+      <div class="stats">
+        <div>
+          <i class="fa-solid fa-clock prep-icon"></i>
+          <small>Prep Time</small>
+          <b id="prep"></b>
+        </div>
+        <div>
+          <i class="fa-solid fa-fire-burner cook-icon"></i>
+          <small>Cook Time</small>
+          <b id="cook"></b>
+        </div>
+        <div>
+          <i class="fa-solid fa-users servings-icon"></i>
+          <small>Servings</small>
+          <b id="servings"></b>
+        </div>
+      </div>
+    </div>
+
+    <section class="details">
+      <div class="tags">
+        <span class="tag easy" id="difficulty"></span>
+        <span class="tag cuisine" id="cuisine"></span>
+      </div>
+      <div class="title-row">
+        <h2 id="name"></h2>
+        <div class="actions">
+          <button id="save" title="Save recipe"><i class="fa-solid fa-bookmark"></i></button>
+          <button id="share" title="Share"><i class="fa-solid fa-share-nodes"></i></button>
+        </div>
+      </div>
+      <p class="desc" id="description"></p>
+
+      <div class="alert" id="alert" hidden>
+        <b>Extended Preparation Time</b>
+        <span>This recipe requires more than 45 minutes to prepare. Plan accordingly!</span>
+      </div>
+
+      <div class="tabs" id="tabs">
+        <button class="active" data-tab="ingredients"><i class="fa-solid fa-list-check"></i> Ingredients</button>
+        <button data-tab="instructions"><i class="fa-solid fa-book-open"></i> Instructions</button>
+        <button data-tab="nutrition"><i class="fa-solid fa-chart-pie"></i> Nutrition</button>
+        <button data-tab="tips"><i class="fa-solid fa-lightbulb"></i> Chef's Tips</button>
+      </div>
+
+      <div class="panel" id="panel"></div>
+
+      <button class="try" id="try">Try Another Recipe</button>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
